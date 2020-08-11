@@ -1,66 +1,29 @@
-//An array of 10 integers and stores 5's table in it
+//Check if the given year is a leap year or not
 /*
+ => To determine whether a year is a leap year, follow these steps:
+ 1. If the year is evenly divisible by 4, go to step 2. ...
+ 2. If the year is evenly divisible by 100, go to step 3. ...
+ 3. If the year is evenly divisible by 400, go to step 4. ...
+ 4. The year is a leap year (it has 366 days).
+ 5. The year is not a leap year (it has 365 days).
+ */
+
 #include <stdio.h>
 
 int main() {
-    int arr[10];
-    for(int i=1; i<11; i++) {
-        arr[i] = i * 5;
+    int year;
+    
+    printf("Enter a year as YYYY\n");
+    scanf("%d", &year);
+    
+    if((year%4 == 0 && year%100 == 0 && year%400 == 0) || (year%4 == 0 && year%100 != 0 )) {
+        
+        printf("%d is a leap year\n", year);
     }
-    printf("The table of 5 is\n");
-    for(int i=1; i<11; i++) {
-        printf("%d\n", arr[i]);
+    
+    else {
+        printf("%d is not a leap year\n", year);
     }
+    
     return 0;
 }
-*/
-
-
-
-/*//Write a program containing function which counts the number of positive int in an array.
- 
- #include <stdio.h>
- int positiveCheck(int *arr, int n) {
- 
- int positiveNos=0;
- for (int i=0; i<n; i++) {
- if (arr[i] > 0) {
- positiveNos++;
- }
- }
- return positiveNos;
- }
- 
- int main()
- {
- int k;
- //printf("Enter the value of n:\n");
- //scanf("%d", &n);
- int arr[5] = {-1, -4, 78, 2, 60};
- k = positiveCheck(arr, 5);
- printf("There are %d positive nos\n", k);
- 
- return 0;
- }
-*/
-
-
-
-/*
- //Create an array of size 3 X 10 which contains the multiplication table of 2,7 & 9
- 
- #include <stdio.h>
- 
- int main() {
- int basic[3] = {2, 7, 9};
- int arr[3][10];
- 
- for (int i=0; i<3; i++) {
- for (int j=0; j<10; j++) {
- 
- }
- }
- 
- return 0;
- }
- */

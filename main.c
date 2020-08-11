@@ -1,17 +1,14 @@
-/*
- Find the area of circle then
- modify the same program to find volume of cylinder
- */
+//To convert deg Celcius to Fahrenheit
+
 #include <stdio.h>
 
 int main() {
-    double radius, pi = 3.14, height;
-    printf("Enter radius of the circle\n");
-    scanf("%lf" ,&radius);
-    printf("Area of circle is %lf\n", pi*radius*radius);
+    double degCelcius;
+    printf("Convert °C to °F\n");
+    printf("Enter the value of degree Celcius\n");
+    scanf("%lf", &degCelcius);
+    printf("The conversion from %.2lf°C  is %.2lf°F\n", degCelcius, degCelcius * 9/5 +32);
     
-    printf("Enter height of the cylinder\n");
-    scanf("%lf" ,&height);
-    printf("Volume of cylinder is %lf\n", pi*radius*radius*height);
+    printf("%d\n", 3.0/9);
     return 0;
 }

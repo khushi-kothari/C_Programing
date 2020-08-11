@@ -1,66 +1,26 @@
-//An array of 10 integers and stores 5's table in it
-/*
+// Multiplication table of an number n
+
 #include <stdio.h>
 
 int main() {
-    int arr[10];
-    for(int i=1; i<11; i++) {
-        arr[i] = i * 5;
+    int n;
+    //int sum =0; only if you want to find ---> Sum of nos occuring in multiplication of n
+   // printf("Enter n of which you want multiplication table\n");
+   // scanf("%d" ,&n);
+    
+    printf("Table of %d is\n" ,n);
+    /*for(int i=1; i<=12; i++) {
+     int result = i*n;
+     sum += result;
+        printf("%d * %d = %d\n", n, i, i*n);
     }
-    printf("The table of 5 is\n");
-    for(int i=1; i<11; i++) {
-        printf("%d\n", arr[i]);
+     printf("Sum of nos occuring in multiplication of n is %d\n");
+     */
+
+//Reverse mul table
+    for (int i=10; i; i--){
+        printf("10 * %d = %d\n",i, i*n);
     }
+    
     return 0;
 }
-*/
-
-
-
-/*//Write a program containing function which counts the number of positive int in an array.
- 
- #include <stdio.h>
- int positiveCheck(int *arr, int n) {
- 
- int positiveNos=0;
- for (int i=0; i<n; i++) {
- if (arr[i] > 0) {
- positiveNos++;
- }
- }
- return positiveNos;
- }
- 
- int main()
- {
- int k;
- //printf("Enter the value of n:\n");
- //scanf("%d", &n);
- int arr[5] = {-1, -4, 78, 2, 60};
- k = positiveCheck(arr, 5);
- printf("There are %d positive nos\n", k);
- 
- return 0;
- }
-*/
-
-
-
-/*
- //Create an array of size 3 X 10 which contains the multiplication table of 2,7 & 9
- 
- #include <stdio.h>
- 
- int main() {
- int basic[3] = {2, 7, 9};
- int arr[3][10];
- 
- for (int i=0; i<3; i++) {
- for (int j=0; j<10; j++) {
- 
- }
- }
- 
- return 0;
- }
- */
